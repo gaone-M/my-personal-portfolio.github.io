@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#294572" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>folio</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <!--links styles-->
+        <!-- ============= Linking Favicon ============== -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon.png">
+        <!-- ============= Linking jQuery ============== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- ========== Linking jQuery Ends ============ -->
+
+
+        <!-- ========= Linking Fonts $ Icons ========== -->
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Montserrat Font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+            rel="stylesheet">
+        <!-- Open Sans Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- ======= Linking Fonts $ Icons Ends ======== -->
+        <!-- =============== Linking CSS =============== -->
+
+        <!-- Balloon CSS : For Tooltips -->
+        <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+        <!-- Preloader CSS -->
+        <link rel="stylesheet" href="./assets/css/preloader.css">
+        <!-- Hamburger Menu CSS-->
+        <link rel="stylesheet" href="./assets/css/hamburger.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- ============= Linking CSS Ends ============= -->
+    </head>
+
+    <body>
+        <!-- Preloader starts-->
+        <div class="loader-body">
+            <div class="loader"></div>
+        </div>
+        <!--Preloader ends-->
+
+        <!--========Navigation Bar Starts============-->
+        <nav class="nav-bar">
+            <header id="logo" onclick="window.location.href = '#'">
+                <h3>&lt;/<span>Gaone</span>&gt;</h3>
+            </header>
+
+            <div class="nav-elements">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <div id="nav-btn" target="_blank" rel="noopener" onclick="window.open('mailto:mokgobelelom@gmail.com');">
+                    <p>Holla @ Me</p>
+                </div>
+            </div>
+
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </nav>
+        <!--=========End Navigation Bar===========-->
+        <!--Side ADD-ONS Starts-->
+        <div class="email add-on">
+            <a href="mailto:mokgobelelom@gmail.com" target="_blank" rel="noopener" class="mail" aria-label="email"
+            data-balloon-pos="left">mokgobelelom@gmail.com</a>
+        <div class="mail-line"></div>
+        </div>
+
+        <div class="social add-on">
+            <a href="https://github.com/gaone-M" target="_blank" rel="noopener" aria-label="Github"
+            data-balloon-pos="right"><i class="fa fa-github social-i"></i></a>
+        <a href="https://www.linkedin.com/in/gaone1967-02-106719" target="_blank" rel="noopener" aria-label="Linkedin"
+            data-balloon-pos="right"><i class="fa fa-linkedin social-i"></i></a>
+        <a href="https://dribbble.com/Gaone02" target="_blank" rel="noopener" aria-label="Dribbble"
+            data-balloon-pos="right"><i class="fa fa-dribbble social-i"></i></a>
+        <a href="https://www.medium.com/@" target="_blank" rel="noopener" aria-label="Medium"
+            data-balloon-pos="right"><i class="fa fa-medium social-i"></i></a>
+
+        <div class="social-line"></div>
+        </div>
+
+        <!--=========Main Wrapper=========-->
+        <div class="main-wrapper">
+            <!--Main Section Starts-->
+            <main class="main">
+                <div class="main-content">
+                    <h3>Hi There</h3>
+                    <h1>I'm <span>Gaone Mokgobelelo</span></h1>
+                    <h2 id="main-title">I am a &nbsp;<span class="title">Web Developer</span></h2>
+
+                    <div class="btn-grp">
+                        <div class="btn primary" onclick="window.open('./assets/resources/Gaone-Mokgobelelo-resume.pdf')">
+                            <p>Get Resume</p>
+                        </div>
+                        <div class=" btn secondary" onclick="window.open('#contact','_self')">
+                            <p>Contact Me</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-img">
+                    <img class="hero-img" src="./assets/img/img.svg" alt="" width="2000px" height="300px">
+                </div>
+            </main>
+            <!--main section ends-->
+        </div>
+
+        <!--======ABout Section============-->
+        <section class="section about" id="about">
+
+            <div class="about-img">
+                <img src="./assets/portfolio/software.jpg" alt="Gaone M" width="60px" height="40px">
+            </div>
+    
+            <div class="about-content">
+                <div class="about-brief">
+                    <h1>About Me</h1>
+                    <p>A passionate Software Developer 🚀 having an experience of
+                         building Web and Mobile applications with JavaScript / ReactJS / HTML/ PHP
+                          and some other cool libraries and frameworks.
+                    </p>
+                </div>
+    
+                <div class="about-tabs">
+                    <ul class="tabs">
+                        <li class="tab" id="skill-head" onclick="viewTab('skills','skill-head')">Main Skills</li>
+                        <li class="tab" id="exp-head" onclick="viewTab('experience','exp-head')">Experience</li>
+                        <li class="tab" id="edu-head" onclick="viewTab('education','edu-head')">Education</li>
+                        <li class="tab" id="cert-head" onclick="viewTab('certification','cert-head')">Certification</li>
+                    </ul>
+    
+                    <div class="tab-contents skills" id="skills">
+                        <div class="tab-content">
+                            <h3>Web Development</h3>
+                            <p>Creating optimized & responsive websites/webapps</p>
+                        </div>
+                        <div class="tab-content">
+                            <h3>Android Development</h3>
+                            <p>Develop Native Android Applications</p>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-contents experience">
+                        <div class="tab-content link" onclick="window.open('');">
+                            <h3>Web Developer Intern</h3>
+                            <p>RichBase Pty Ltd</p>
+                        </div>
+                        <div class="tab-content link" onclick="window.open('');">
+                            <h3>Front EndDeveloper</h3>
+                            <p>Web Mechanics</p>
+                        </div>
+                        <div class="tab-content link" onclick="window.open('https://gaone-m.github.io/my-personal-portfolio.github.io/');">
+                            <h3>Freelance</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="tab-contents education">
+                        <div class="tab-content link" onclick="window.open('');">
+                            <h3>BSc. Computer Systems Engineering</h3>
+                            <p>Botswana Accountancy College: 2016-2020</p>
+                        </div>
+                        <div class="tab-content link" onclick="window.open('');">
+                            <h3>BSc. Computer Systems Engineering</h3>
+                            <p>University of Sunderland : 2019-2020</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents certification">
+                        <div class="tab-content link"
+                            onclick="window.open('https://www.edureka.co/my-certificate/2427da3adf7926f41f5f1c0d4e46cd37');">
+                            <h3>Android Certification</h3>
+                            <p>Edureka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        <!--=====About Section Ends============-->
+
+        <!--====Portfolio Starts====-->
+        <!-- ========== Portfolio Section Starts ============ -->
+    <section class="section portfolio" id="portfolio">
+
+        <h2>Portfolio</h2>
+        <h3>Here are some of my recent works</h3>
+
+
+        <ul class="project-tabs">
+            <li class="project-tab active-project" id="all-project-tab"
+                onclick="viewProjectTab('all-works','all-project-tab')">All</li>
+            <li class="project-tab" id="website-project-tab"
+                onclick="viewProjectTab('web-works','website-project-tab')">Web</li>
+            <li class="project-tab" id="android-project-tab"
+                onclick="viewProjectTab('android-works','android-project-tab')">Android</li>
+            <li class="project-tab" id="other-project-tab" onclick="viewProjectTab('other-works','other-project-tab')">
+                Other</li>
+        </ul>
+
+
+        <div class="works">
+
+            <div class="all-works project-content">
+
+                <div class="project-card">
+                    <img src="./assets/portfolio/glo-restaurant.PNG" alt="unChat" class="project-img">
+                    <div class="card-content">
+                        <h4>Glo-Restaurant</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>A great restaurant website design is not just beautiful, but effective. Have a look at our Glo restaurant website. Hire us to design yours!
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> HTML &nbsp;CSS &nbsp;JavaScript
+                             &nbsp;SCSS etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M/glo-restaurant.github.io');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://gaone-m.github.io/glo-restaurant.github.io/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/portfolio/alan-news.PNG" alt="alan-ai" class="project-img">
+                    <div class="card-content">
+                        <h4>Alan AI News Application</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>A voice recognition News Application made using React JS. Alan AI voice Assistant.
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> React, &nbsp;CSS etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M/alan-ai-news-web-app.github.io');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://alan-ai-news-web-app.netlify.app/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/portfolio/airbnb.PNG" alt="airbnb" class="project-img">
+                    <div class="card-content">
+                        <h4>AirBnb</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>An Airbnb Clone app made with react to preview
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> React.js, &nbsp;SCSS, &nbsp; JavaScript
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M/gaonem-airbnb.github.io');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://airbnb-clone-7a91e.web.app/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/portfolio/tic-tac.PNG" alt="Tic Tac Toe" class="project-img">
+                    <div class="card-content">
+                        <h4>Tic Tac Toe</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A small game to kill the boredom.</p>
+                        <p><br><strong>Technologies Used :</strong> Android Studio, Java and Adobe XD</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M/tic-tac-toe.github.io');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://gaone-m.github.io/tic-tac-toe.github.io/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/js-documentation.png" alt="JavaScript Documentation Website"
+                        class="project-img">
+                    <div class="card-content">
+                        <h4>Charity Website</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is an unofficial documentation page of Javascript Language.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/whack_a_mole.webp" alt="Whack A Mole !" class="project-img">
+                    <div class="card-content">
+                        <h4>Whack A Mole !</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>A classic "Whack A Mole" game made using React</p>
+                        <p><br><strong>Technologies Used :</strong> React.js, &nbsp;CSS3 and Javascript etc</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/srms.jpg" alt="SRMS" class="project-img">
+                    <div class="card-content">
+                        <h4>SRMS</h4>
+                        <h5><i class="website-i"></i>Java Application</h5>
+                        <p>A Java Application to manage Student Records,made as part of KTU mini project
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> Java, MySQL and NetBeans IDE</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/all_in_one.png" alt="All In One:Utility App" class="project-img">
+                    <div class="card-content">
+                        <h4>All In One</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A simple utility app which perform five utilities like Unit Conversion, Flashlight etc.</p>
+                        <p><br><strong>Technologies Used :</strong> Java & Android Studio</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/lumidex.jpg" alt="Lumidex Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Lumidex Landing Page</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a demo landing page made as part of an internship assignment.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./art/home.jpg" alt="Personal Portfolio" class="project-img">
+                    <div class="card-content">
+                        <h4>Personal Portfolio</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a webapp made to showcase all my works.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener" onclick="window.open('https://github.com/gaone-M');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="project-content web-works">
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/unChat.webp" alt="unChat" class="project-img">
+                    <div class="card-content">
+                        <h4>unChat</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>Receive anonymous messages from your friends, colleagues etc.
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> React, &nbsp;Express, &nbsp;Node.js,
+                            &nbsp;MongoDB, &nbsp;SCSS etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/unChat_frontend');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://unChat.netlify.app');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/whatsend.webp" alt="WhatSend" class="project-img">
+                    <div class="card-content">
+                        <h4>WhatSend</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>Send Whatsapp message without saving the number in your contact.
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> React, &nbsp;CSS etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/whatsend');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://whatsend.netlify.app');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/markdowneditor.webp" alt="Markdown Editor" class="project-img">
+                    <div class="card-content">
+                        <h4>markItDown</h4>
+                        <h5><i class="website-i"></i>Web App</h5>
+                        <p>An app made with react to preview and edit Markdown.
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> React.js, &nbsp;SCSS, &nbsp; JavaScript
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/markItDown');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://markitdown.netlify.app');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/whack_a_mole.webp" alt="Whack A Mole !" class="project-img">
+                    <div class="card-content">
+                        <h4>Whack A Mole !</h4>
+                        <h5><i class="website-i"></i>React Web App</h5>
+                        <p>A classic "Whack A Mole" game made using React</p>
+                        <p><br><strong>Technologies Used :</strong> React.js, CSS3 and Javascript</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Whack-A-Mole');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://hit-mole.netlify.com/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/lumidex.jpg" alt="Lumidex Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Lumidex Landing Page</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a demo landing page made as part of an internship assignment.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/LumiDex');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://lumidex.netlify.com/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/js-documentation.png" alt="JavaScript Documentation Website"
+                        class="project-img">
+                    <div class="card-content">
+                        <h4>JS Documentation</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is an unofficial documentation page of Javascript Language.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Javascript-Documentation');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://js-documentation.netlify.com/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./art/home.jpg" alt="Personal Portfolio" class="project-img">
+                    <div class="card-content">
+                        <h4>Personal Portfolio</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a webapp made to showcase all my works.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery,
+                            Adobe XD etc.</p>
+
+                        <div class="card-icons">
+                             <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/portfolio');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener" onclick="window.open('https://aromalanil.me/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-content android-works">
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/all_in_one.png" alt="All In One:Utility App" class="project-img">
+                    <div class="card-content">
+                        <h4>All In One</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A simple utility app which perform five utilities like Unit Conversion, Flashlight etc.</p>
+                        <p><br><strong>Technologies Used :</strong> Java & Android Studio</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/All_In_One#1-splitbill');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1aDDKDexAhqhU65-iE1OmOSVBLqV_l-4s');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/tic_tac_toe.jpg" alt="Tic Tac Toe" class="project-img">
+                    <div class="card-content">
+                        <h4>Tic Tac Toe</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A small game to kill the boredom.</p>
+                        <p><br><strong>Technologies Used :</strong> Android Studio, Java and Adobe XD</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Tic-Tac-Toe');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1_PEaFPvvivFfIGHOwiRne1Xcmfqy7F4w');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-content other-works">
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/srms.jpg" alt="SRMS" class="project-img">
+                    <div class="card-content">
+                        <h4>SRMS</h4>
+                        <h5><i class="website-i"></i>Java Application</h5>
+                        <p>A Java Application to manage Student Records,made as part of KTU mini project
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> Java, MySQL and NetBeans IDE</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/SRMS');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="btn view-more">
+                <a href="https://github.com/gaone-M" class="btn view_more">View More</a><br/>
+                <!--p id="view-more-content">View More</p-->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =========== Portfolio Section Ends ============= -->
+
+    <!--=====Contact Section=======-->
+    <section class="section contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-wrapper">
+            <form name="contact" action="/message_send.html" class="contact-form" netlify-honeypot="bot-field" data-netlify="true">
+
+                <h3 class="form-head">Send Me A Note</h3>
+
+                <input required placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
+
+
+                <input required placeholder="Email Address" class="input" type="email" name="email" id="email"
+                    autocomplete="off" />
+
+                <input placeholder="Subject" class="input" type="text" name="subject" id="subject" autocomplete="off" />
+
+
+                <textarea required placeholder="Your Message" name="message" class="input" id="message"></textarea>
+
+
+                <button class="submit btn" type="submit">Send Mail</button>
+            </form>
+
+
+
+            <div class="contact-details">
+                <div class="contact-container phone" onclick="window.open('tel:+26775680251');">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <a href="tel:+26775680251" class="contact-data">+267 75680251</a>
+                    </div>
+                </div>
+
+                <div class="contact-container mail-id" onclick="window.open('mailto:mokgobelelom@gmail.com');">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <a href="mailto:mokgobelelom@gmail.com" class="contact-data">mokgobelelom@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="s-medias">
+                    <h3 class="s-head">Catch Me On</h3>
+
+                    <div class="social-media-pack">
+                        <a id="twitter" href="https://twitter.com/gaone67821184" target="_blank" rel="noopener"
+                            alt="twitter">
+                            <i class="fa fa-twitter  contact-social"></i>
+                        </a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/gaone1967-02-106719" target="_blank" rel="noopener"
+                            alt="linkedin">
+                            <i class="fa fa-linkedin contact-social"></i>
+                        </a>
+                        <a id="github" href="https://github.com/gaone-M" target="_blank" rel="noopener"
+                            alt="github">
+                            <i class="fa fa-github contact-social"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section Ends-->
+
+    <!--Footer Section-->
+    <footer class="footer">
+
+        <a href="#" class="up-btn-wrapper" alt="Go to top">
+            <i class="fa fa-angle-up up-btn"></i>
+        </a>
+
+
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/gaone1967-02-106719/" target="_blank" rel="noopener" alt="linkedin">
+                <i class="fa fa-linkedin footer-i"></i>
+            </a>
+            <a href="https://github.com/gaone-M" target="_blank" rel="noopener" alt="github">
+                <i class="fa fa-github footer-i"></i>
+            </a>
+        </div>
+
+
+        <hr / width="100%">
+
+        <p>Made with ❤️ by Gaone M</p>
+        <p class="copyright">&copy; 2020 Gaone M</p>
+l
+
+    </footer>
+    <!--End Footer-->
+
+
+        <!-- =============== Linking JS =============== -->
+        <!-- Baffle JS -->
+        <script src="./assets/libraries/baffle.js"></script>
+        <!-- Custom JS -->
+        <script src="./assets/js/script.js"></script>
+        <!-- ============ Linking JS Ends ============= -->
+
+    </body>
+</html>
